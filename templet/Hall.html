@@ -1,0 +1,126 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+<!--
+<script>
+    
+$(document).ready(function()
+{
+  $("tbody tr").hover(function()
+  {
+    $(this).css("background-color", "#eaedfc");
+  }, 
+  function()
+   {
+    	$(this).css("background-color", "#f8f9fa");
+  	});
+    
+});
+
+</script>
+<script>
+ 
+
+
+jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+</script>
+-->
+<div class="container">
+    <h3><b> Home <i class="fas fa-clinic-medical "> </i></b></h3>
+     <h6><b><a href="#"><u>Medicine Database</u></a> | <a href="patientdb">Patient Database</a></b></h6>    
+    <hr>
+    <!--
+    <div class="container">
+        <div class="row">
+                <div class="col-sm-12">
+                     <div class="form-group">
+                         <label for="formGroupExampleInput2">Group</label>
+                           <select id="unit" class="form-control">
+                                        <option value="meaters">--None--</option>
+                                        <option value="meaters">Carpet</option>
+                                        <option value="Per Pice">Floor Carpet </option>
+                                        <option value="Cm">Badrooms </option>
+                                        <option value="Cm">Top </option>
+                                        <option value="Cm">Bottom </option>
+
+                                </select>
+                    </div>
+                </div>
+        </div>
+-->
+    </div><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-danger float-right ml-2"><i class="fas fa-trash"></i> Delete</button> <button type="button" class="btn btn-primary float-right ml-1"><i class="fas fa-envelope"></i> Message</button>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <h6><b>Medicine Database</b></h6>
+             <table class="table ">
+            <thead  class="bg-primary"  style="color: white;">
+              <tr>
+                  <th></th>
+                <th>Name</th>
+                <th>Quantity</th>
+                  <th>Purchase_Date</th>
+                <th>Expiration Date</th>
+                  <th></th>
+              </tr>
+            </thead>
+            <tbody class="bg-light text-dark">
+                {% for i in a %}
+                 
+                      <tr class='clickable-row' data-href='adf'>
+                          <td>
+                               <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                                  </div>
+                          </td>
+
+                        <td>{{i.name}}</td>
+                        <td>{{i.quantity}}</td>
+                        <td>{{i.purchase_date}}</td>
+                        <td>{{i.expiration_date}}</td>
+                          <td><i class="far fa-edit"></i></td>
+                      </tr>
+                {% endfor %}
+             </tbody>
+              <!--   
+              <tr class='clickable-row'data-href='ggs'>
+                  <td>
+                       <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                           
+                          </div>
+                  </td>
+                <td>Mary</td>
+                <td>60</td>
+                <td>20/6/2025</td>
+                   <td><i class="far fa-edit"></i></td>
+              </tr>
+                    
+              <tr class='clickable-row' data-href='adf'>
+                  <td>
+                       <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                           
+                          </div>
+                  </td>
+                <td>July</td>
+                <td>101</td>
+                <td>1/5/2028</td>
+                   <td><i class="far fa-edit"></i></td>
+              </tr>
+                -->
+           
+          </table>
+    </div>
+</div>
+{% endblock %}

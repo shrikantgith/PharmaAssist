@@ -1,0 +1,170 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+
+<div class="container">
+    <h3><b>Patient <i class="fas fa-user-friends"></i></b></h3> 
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-8">
+                 
+                    <div class="container">
+                        <div class="row">
+                                <div class="col-md-11">
+                                    
+                                     
+                                </div>
+                                <div class="col-md-1 ">
+                                     
+                                   
+                                </div>
+                        </div>
+              
+                    </div> 
+                      
+                     
+       
+               
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+ 
+  
+    <div class="container">
+             <form method='post' action="">
+                     {% csrf_token %}
+                      <div class="row">
+                          <div class="col-md-12">
+                                 {% if msg == 1 %}
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                      <strong>{{Patient_Name}}'s !</strong> Data is added<strong>Suscessfully !! </strong>
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                {% endif %}
+                                 {% if msg == 2 %}
+                                    <div class="alert  alert-danger alert-dismissible fade show" role="alert">
+                                      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                {% endif %}
+                                <div class="form-group">
+                                    <!--
+                                        <label for="exampleInputPassword1">Patient Name</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter identifier ">
+                                    -->
+                                    {{form.Patient_Name.label_tag}}
+                                    {{form.Patient_Name}}
+                                      </div>
+                          </div>
+                          
+                      </div>
+                     <div class="row">
+                         <div class="col-md-6">
+                               <div class="form-group">
+                                                 {{form.Doctor.label_tag}}
+                                                 {{form.Doctor}}
+                                                 <!--
+                                                <label for="exampleInputPassword1">Phone No</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone No">
+                                                -->
+                                              </div>
+                         </div>
+                         <div class="col-md-6">
+                                 <div class="form-group">
+                                                {{form.Phno_NO.label_tag}}
+                                                {{form.Phno_NO}}
+                                                <!--
+                                                <label for="exampleInputPassword1">Doctor</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Doctor">
+                                                -->
+                                              </div>
+                                
+                         </div>
+                         
+                     </div>
+                      <div class="row">
+                         <div class="col-md-6">
+                             
+                                            
+                         </div>
+                         <div class="col-md-6">
+                             <!--
+                              <div class="form-group">
+                                    
+                                        <label for="exampleInputPassword1">Patient Name</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter identifier ">
+<div class="form-group">
+                     <label for="formGroupExampleInput2">Group</label>
+                       <select id="unit" class="form-control">
+                                    <option value="meaters">--None--</option>
+                                    <option value="meaters">Carpet</option>
+                                    <option value="Per Pice">Floor Carpet </option>
+                                    <option value="Cm">Badrooms </option>
+                                    <option value="Cm">Top </option>
+                                    <option value="Cm">Bottom </option>
+
+                            </select>
+                </div>
+                                  
+                                    {{form.Medicine.label_tag}}
+                                    {{form.Medicine}}
+                                      </div>
+  -->
+                         </div>
+                         
+                     </div>
+             
+                                                       
+                      <button type="submit" class="btn btn-primary">Add <i class="fas fa-capsules"></i></button>
+                         
+               </form>
+             <hr>
+           <div class="container">
+        <h6><b>Medicine</b></h6>
+             <table class="table ">
+            <thead  class="bg-primary"  style="color: white;">
+              <tr>
+                  <th></th>
+                <th>Name</th>
+                <th>Quantity</th>
+                  <th>Price</th>
+          
+                  
+                    
+              </tr>
+            </thead>
+            <tbody class="bg-light text-dark">
+               
+                      <tr>
+                           <td>
+                               <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                                  </div>
+                          </td>
+                        
+                        
+                        <td>i.City</td>
+                          <td>i.Doctor</td>
+                          <td>i.Phno_NO</td>
+                          
+                           
+                   
+                      </tr>
+               
+            </tbody>
+          </table>
+    </div>
+    </div>
+</div>
+{% endblock %}

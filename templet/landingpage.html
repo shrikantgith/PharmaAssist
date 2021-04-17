@@ -1,0 +1,306 @@
+{% load static %}
+<html>
+    
+    <head>
+        <title>admission</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+        <style>
+            *
+            {
+                font-family:sans-serif;
+            }
+          
+  .toggle.android { border-radius: 0px;}
+  .toggle.android .toggle-handle { border-radius: 0px; }
+ 
+            /*
+            img
+            {
+                    animation-name: example;
+                    animation-duration: 1s;
+            }
+            h5
+            {
+                animation-name: example;
+                animation-duration: 2s;
+            }
+            @keyframes example 
+            {
+              from {opacity: 0%;}
+              to {opacity: 100%;}
+            }
+            h1
+            {
+                
+                animation-duration: 1s;
+            }
+           
+            .landingpage
+            {
+                 
+            }
+            .welcome
+            {
+                
+                padding:0;
+                margin: 0;
+                left: 0;
+            }
+            /*
+            .c1
+            {
+                background-color: aqua;
+                width: 500px;
+                display: block;
+                position: absolute;
+                left:0;
+                
+            }
+            .c2
+            {
+                position: absolute;
+                background-color: forestgreen;
+                top: 0;
+                left: 50%;
+                display: block;
+            }
+            */
+            .c1
+            {
+                background-color:#3f87f5;
+                padding: 0;
+                margin: 0;
+                
+            }
+            .c2
+            {
+                 background-color: white;
+        
+            }
+            .c11
+            {
+                  margin-left: 20px;
+            }
+            .image
+            {
+                height: 100px;
+                width: 110px;
+                border-radius: 50px;
+                border: 10px solid #5191f4;
+                margin-left: 5px;
+                padding-left: 0;
+              
+               
+            }
+            .ch1
+            {
+                color: aliceblue;
+                margin-top: 12px;
+              
+                
+            }
+             
+            
+            .m
+            {
+                font-family:sans-serif;
+                color: #cedefc;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                
+                
+            }
+           
+           
+            ul
+            {
+                margin: 0;
+                padding:0;
+            }
+            ul li
+            {
+                padding: 15px 15px 9px 0px; ;
+                color: white;
+                
+                  
+            }
+            ul li a
+            {
+                color: #cedefc;
+                padding-left: 15px;
+                
+                
+               
+            }
+            ul li:hover{
+                 
+                border-left-style: solid;
+            
+            }
+              ul li:hover a{
+                color: white;
+                  text-decoration: none;
+            
+            }
+            ul li:hover .m{
+                color: white;
+              
+              
+            }
+            
+            label
+            {
+                font-weight: bold;
+            }
+             
+         
+             input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+            
+            
+        </style>
+        <script>
+           /*
+            
+           $(document).ready(function()
+            {
+
+                $(".landingpage").delay(3000).fadeOut();
+               $(".welcome").hide();
+                $(".addr").delay(3000).fadeOut();
+               $(".welcome").delay(3690).fadeIn();
+               
+
+            }); 
+        </script>
+ 
+    </head>
+    
+    <body>
+        <!--
+       <div class="container landingpage">
+           <center>
+            <div class="row ">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <br><br>
+                            <img src="{% static 'Picture1.png' %}">
+                           <h1 style="font-family: Tw Cen MT;" class="animate__backInLeft"><b> We Provide Solutions For Your Everyday Problems..</b></h1>
+                        </div>
+                    </div>
+            </div>
+            <br><br><br><br><br>
+            <h6 class="addr">www.elephantatech.com</h6>
+            </center>
+        </div>
+-->
+           
+        <div class="container-fluid welcome">
+             <!--
+                <div class="container-fluid c1">
+                     <h1>Welcome To BappaMedical</h1><br><br><br>
+                </div>
+            
+                <div class="container-fluid c2">
+                    
+                    <h1>kjhjkh</h1>
+                </div>
+            -->
+            <div class="row">
+                <div class="col-md-2 c1" >
+                    
+                
+                    <div class="container c11">
+                         
+                        <br>
+                        <img  class="image"src="{% static 'man.png' %}">
+                        <br>
+                       <h4 class="ch1"><b>Baby Drajox</b></h4>
+                       
+                    </div>
+                    <br>
+            <!--
+                         <span class="s"><a href="" ><i class="fas fa-clinic-medical  fa-lg " style="color: white;"> </i><span class="m">Home</span></a></span><br><br>
+                        <a href="" ><i class="fas fa-user-friends fa-lg " style="color: white;"></i><span class="m">Customer </span></a><br><br>
+                        <a href="" ><i class="fas fa-user-alt  fa-lg " style="color: white;"></i><span class="m">Account</span></a><br><br>
+                        <a href="" ><i class="fas fa-rupee-sign  fa-lg " style="color: white;"></i><span class="m">My Plan</span></a><br><br>
+                     <a href="" ><i class="fas fa-stopwatch  fa-lg " style="color: white;"></i><span class="m">Reaminder</span></a><br><br>
+                        
+                       
+                    <a href="" ><i class="fas fa-capsules  fa-lg " style="color: white;"></i><span class="m">Medicine</span></a><br><br>
+                    <a href="" ><i class="fas fa-inbox fa-lg " style="color: white;"></i><span class="m">Inbox</span></a><br><br>
+                    <a href="" ><i class="fas fa-envelope fa-lg " style="color: white;"></i><span class="m">Send Message</span></a><br><br>
+                     <a href="" ><i class="fas fa-power-off fa-lg " style="color: white;"></i><span class="m">Sign Out</span></a><br><br>
+                
+            -->
+                   
+
+
+
+
+
+
+
+               
+                   <ul style="list-style-type:none;">
+                       <li><a href="hall" ><i class="fas fa-clinic-medical  fa-lg "> </i><span class="m"> Home</span></a></li>
+                       <li><a href="customer"><i class="fas fa-user-friends fa-lg "></i><span class="m">Patient</span></a></li>
+                       <li><a href="account"> <i class="fas fa-cog  fa-lg "></i><span class="m">Account</span></a></li>
+                       <li><a href="plans"><i class="fas fa-rupee-sign  fa-lg "></i><span class="m">My Plan</span></a></li>
+                       <li><a href="reminder"><i class="fas fa-stopwatch  fa-lg "></i><span class="m">Reaminder</span></a></li>
+                       <li><a href="medicine"><i class="fas fa-capsules  fa-lg "></i><span class="m">Medicine</span></a></li>
+                       <li><a href="inbox"><i class="fas fa-inbox fa-lg "></i><span class="m">Inbox</span></a> <span class="badge badge-light badge-pill">14</span></li>
+                       <li><a href="message"><i class="fas fa-envelope fa-lg "></i><span class="m"> Send Message </span></a> </li>
+                       <li><a href="signout"><i class="fas fa-power-off fa-lg "></i><span class="m">Sign Out</span></a></li>
+    
+                    </ul>
+                   
+                </div>
+               
+                <div class="col-md-10 c2  ">
+                    <br>
+                       <div class="row">
+                             <div class="col-md-1">
+                                  <span class="input-group-text" style="background-color: white; border: none;"id="basic-addon1"><i class="fas fa-search fa-lg"></i></span>
+                             </div>
+                             <div class="col-md-9">
+                                 <input type="text" placeholder="Search" style="width: 100%; border: none;">
+                             </div>
+                             <div class="col-md-2">
+                                 <!--
+                                 <button type="button" class="btn btn-primary" style="height:40px; width: 100%;"><center><i class="fas fa-sign-out-alt fa-lg " style="color: white;"> Out</i></center></button> -->
+                                  <i class="fas fa-bell fa-lg"></i>
+                             </div>
+                             <hr style="width: 100%">
+                             
+                        </div>
+                            
+                            
+                       
+              
+
+                       {% block Hall %}
+                            
+                       {% endblock %}
+                </div>
+            </div>
+                
+             
+           
+  
+        </div>
+    </body>
+
+</html>   

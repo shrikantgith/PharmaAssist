@@ -1,0 +1,90 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+{% csrf_token %}
+<div class="container">
+    <h3><b>Settings <i class="fas fa-cog"></i></b></h3>
+      <h6><b><a href="#"><u>Account Settings</u></a> |<a href="profilesetting"> Profile Settings</a></b></h6>  <br>
+    <div class="container"style="padding: 0px; margin: 0px;" >
+        <div class="row">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-8">
+                <form>
+                    
+                     <div class="form-group">
+                         
+                        
+                         
+                        <label for="exampleInputPassword1">Phone No</label>
+                          {{form.Phno_NO}}
+                        <!--<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                        -->
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <!--<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
+                          
+                          {{form.Email_address}}
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                          <!--
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+-->
+                      </div>
+                    
+                    <div class="container" style="padding: 0px; margin: 0px;">
+                        <div class="row">
+                                <div class="col-md-11">
+                                     <div class="form-group">
+                                        <label for="exampleInputEmail1">Email Notification</label>
+                                         <small id="emailHelp" class="form-text text-muted">Turn on Email Notification </small>
+                                      </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <br>
+                                    {{form.Email_noti}}
+                                    <!--
+                                    <input type="checkbox" checked data-toggle="toggle" data-style="ios" class="input inp">-->
+                                </div>
+                        </div>
+                        
+                    
+                    </div>
+                      <div class="container" style="padding: 0px; margin: 0px;">
+                        <div class="row">
+                                <div class="col-md-11">
+                                     <div class="form-group">
+                                        <label for="exampleInputEmail1">SMS Notification</label>
+                                         <small id="emailHelp" class="form-text text-muted">Turn on SMS Notification </small>
+                                      </div>
+                                     
+                                </div>
+                                <div class="col-md-1 ">
+                                    <br>
+                                    {{form.SMS_noti}}
+                                    <!--
+                                    <input type="checkbox" checked data-toggle="toggle" data-style="ios" class="input inp">-->
+                                </div>
+                        </div>
+                        
+                    
+                    </div>
+                    <br>
+                      <button type="submit" class="btn btn-primary">Conform</button>
+                </form>
+             
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+       
+</div>
+{% endblock %}

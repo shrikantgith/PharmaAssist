@@ -1,0 +1,42 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+ <div class="container">
+    <h3><b>Reminder <i class="fas fa-stopwatch"></i></b></h3>
+       <h6><b><a href="reminder">Add Task</a> | <a href="seetask"><u>See Task</u></a></b></h6>    
+     <hr>
+     <div class="container">
+        <h6><b>Task Queue</b></h6>
+             <table class="table ">
+            <thead  class="bg-primary"  style="color: white;">
+              <tr>
+                <th>Subject</th>
+                <th>Date</th>
+                <th>Status </th>
+              </tr>
+            </thead>
+            <tbody class="bg-light text-dark">
+              <tr  >
+                <td>John</td>
+              
+                <td>16/5/2021</td>
+                    <td>Complite</td>
+              </tr>
+              <tr  >
+                <td>Mary</td>
+         
+                <td>20/6/2025</td>
+                         <td>Pending</td>
+              </tr>
+              <tr  >
+                <td>July</td>
+              
+                <td>1/5/2028</td>
+                    <td>Panding</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+       
+</div>
+{% endblock %}

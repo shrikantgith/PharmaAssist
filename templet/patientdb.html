@@ -1,0 +1,68 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+<script>
+$(document).ready(function()
+{
+  $("tbody tr").hover(function()
+  {
+    $(this).css("background-color", "#eaedfc");
+  }, 
+  function()
+   {
+    	$(this).css("background-color", "#f8f9fa");
+  	});
+});
+</script>
+<div class="container">
+    <h3><b> Home <i class="fas fa-clinic-medical "> </i></b></h3>
+       <h6><b><a href="hall">Medicine Database</a> | <a href="#"><u>Patient Database</u></a></b></h6>
+</div>
+ <br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-danger float-right ml-2"><i class="fas fa-trash"></i> Delete</button> <button type="button" class="btn btn-primary float-right ml-1"><i class="fas fa-envelope"></i> Message</button>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <h6><b>Patient Database</b></h6>
+             <table class="table ">
+            <thead  class="bg-primary"  style="color: white;">
+              <tr>
+                  <th></th>
+                  
+                <th>Patient_Name</th>
+                <th>Address</th>
+                <th>City</th>
+                  <th>Doctor</th>
+                  <th>Phone NO</th>
+                  <th></th>
+                    
+              </tr>
+            </thead>
+            <tbody class="bg-light text-dark">
+                {% for i in a %}
+                      <tr>
+                           <td>
+                               <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                                  </div>
+                          </td>
+                        <td>{{i.Patient_Name}}</td>
+                        <td>{{i.Address}}</td>
+                        <td>{{i.City}}</td>
+                          <td>{{i.Doctor}}</td>
+                          <td>{{i.Phno_NO}}</td>
+                          <td>{{i.}}</td>
+                          <td><i class="far fa-edit"></i></td>
+                          
+                   
+                      </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+    </div>
+{% endblock %}

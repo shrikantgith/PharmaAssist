@@ -1,0 +1,69 @@
+{% extends "landingpage.html" %}
+
+{% block Hall %}
+ <div class="container">
+    <h3><b>Reminder <i class="fas fa-stopwatch"></i></b></h3>
+       <h6><b><a href="addtask"><u>Add Task</u></a> | <a href="seetask">See Task</a></b></h6>    
+     <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-8" >
+                <form>
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Task</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                      </div>
+                      
+                    
+                    <div class="container">
+                        <div class="row">
+                                <div class="col-md-4">
+                                      <div class="form-group">
+                                        <label for="exampleInputPassword1">Date</label>
+                                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                                      </div>
+                                     
+                                </div>
+                                
+                        </div>
+                        
+                    
+                    </div>
+                      <div class="container">
+                        <div class="row">
+                                <div class="col-md-11">
+                                     <div class="form-group">
+                                        <label for="exampleInputEmail1">SMS Notification</label>
+                                         <small id="emailHelp" class="form-text text-muted">Turn on SMS Notification </small>
+                                      </div>
+                                     
+                                </div>
+                                <div class="col-md-1 ">
+                                    <br>
+                                    <input type="checkbox" checked data-toggle="toggle" data-style="ios" class="input inp">
+                                </div>
+                        </div>
+                        
+                    
+                    </div>
+                    <br>
+                      <button type="submit" class="btn btn-primary">Add Task <i class="fas fa-stopwatch"></i></button>
+                    
+                </form>
+                <br><br>
+             <hr>
+            </div>
+            
+            <div class="col-md-2">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+       
+</div>
+{% endblock %}
